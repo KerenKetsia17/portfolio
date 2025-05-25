@@ -1,0 +1,473 @@
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Base */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Titre principal */
+.portfolio {
+  font-weight: 700;
+  font-size: 48px;
+  color: #e85d75;
+  text-align: center;
+  margin-top: 40px;
+}
+
+span {
+  font-size: 42px;
+  color: #6c63ff;
+}
+
+/* Présentation */
+.port {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px;
+}
+
+.port h3 {
+  font-size: 36px;
+  color: #343a40;
+}
+
+.port img {
+  width: 300px;
+  height: auto;
+}
+
+/* À propos */
+.a {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.a h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #6c63ff;
+}
+
+.ap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.ap img {
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.a p {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+  text-align: justify;
+  padding: 10px;
+}
+
+/* Compétences */
+.competence {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f0f0f5;
+}
+
+.competence h1 {
+  font-size: 32px;
+  color: #6c63ff;
+  margin-bottom: 30px;
+}
+
+.elements {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  font-weight: 500;
+  font-size: 16px;
+  min-width: 180px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card a {
+  color: #6c63ff;
+  font-weight: bold;
+}
+
+/* Projets & Expériences */
+.projet, .experience {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.projet h1, .experience h1 {
+  font-size: 30px;
+  color: #6c63ff;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #6c63ff;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #574fd6;
+  transform: scale(1.05);
+}
+
+button a {
+  color: white;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.footer-section {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff;
+}
+
+.logo-img {
+  max-width: 80px;
+  height: auto;
+}
+
+
+.site-header {
+  text-align: center;
+  background: linear-gradient(45deg, #6b5b95, #b8a9c9);
+  color: white;
+  padding: 40px 20px;
+}
+
+.site-header h1 span {
+  color: #ffd700;
+}
+
+.header-img {
+  max-width: 150px;
+  margin-top: 20px;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.projet-section {
+  margin-bottom: 50px;
+}
+
+.projet-section h2 {
+  color: #6b5b95;
+  font-size: 28px;
+}
+
+.projet-section p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+} */
+
+/* .image-gallery img {
+  width: calc(20% - 12px);
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+} */
+
+
+
+/* ---------- */
+
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  width: 180px;
+  height: auto;
+  border: 5px solid #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: rotate(-5deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Inclinaisons différentes pour un effet désordonné */
+.image-gallery img:nth-child(2n) {
+  transform: rotate(5deg);
+}
+.image-gallery img:nth-child(3n) {
+  transform: rotate(-8deg);
+}
+.image-gallery img:nth-child(4n) {
+  transform: rotate(6deg);
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05) rotate(0deg);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+
+
+
+/* ------------ */
+
+.photo-frame {
+  width: 600px;
+  height: 300px;
+  margin: 30px auto;
+  border: 3px solid #aaa;
+  border-radius: 12px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: visible;
+}
+
+/* Conteneur photos à gauche */
+.left-photos, .right-photos {
+  position: relative;
+  width: 45%;
+  height: 100%;
+}
+
+/* Photos communes */
+.left-photos img, .right-photos img {
+  position: absolute;
+  width: 180px;
+  border: 5px solid white;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Photos à gauche, inclinées vers la droite */
+.left-photos img:nth-child(1) {
+  top: 20px;
+  left: 10px;
+  transform: rotate(10deg);
+  z-index: 3;
+}
+.left-photos img:nth-child(2) {
+  top: 100px;
+  left: 50px;
+  transform: rotate(5deg);
+  z-index: 2;
+}
+
+/* Photos à droite, inclinées vers la gauche */
+.right-photos img:nth-child(1) {
+  top: 30px;
+  right: 10px;
+  transform: rotate(-10deg);
+  z-index: 3;
+}
+.right-photos img:nth-child(2) {
+  top: 110px;
+  right: 50px;
+  transform: rotate(-5deg);
+  z-index: 2;
+}
+
+/* Hover : zoom + rotation à 0 */
+.left-photos img:hover, .right-photos img:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+  z-index: 10;
+}
+
+
+
+.album-container {
+  position: relative;
+  width: 700px;
+  height: 450px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* Chaque photo dans son "cadre" positionné par variables CSS */
+.photo {
+  position: absolute;
+  top: var(--pos-y);
+  left: var(--pos-x);
+  transform: translate(-50%, -50%) rotate(var(--rot));
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 8px solid white;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+  width: 180px;
+  height: 130px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* L'image remplit le conteneur */
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover : effet levé + rotation à 0 + ombre plus grosse */
+.photo:hover {
+  transform: translate(-50%, -50%) rotate(0deg) scale(1.15);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+  z-index: 10;
+}
+
+.photo-album {
+  width: 720px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+.photo {
+  width: 320px;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  position: relative;
+}
+
+/* Inclinaison alternée */
+.photo-left {
+  transform: rotate(-5deg);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.photo-right {
+  transform: rotate(5deg);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Hover : effet levé, rotation à 0 */
+.photo:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  z-index: 10;
+}
+
+
+/* ---------- */
+
